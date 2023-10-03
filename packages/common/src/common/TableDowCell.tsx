@@ -65,7 +65,7 @@ export class TableDowCell extends BaseComponent<TableDowCellProps> {
             {...props.extraDataAttrs}
           >
             <div className="fc-scrollgrid-sync-inner">
-              <a
+              <p
                 aria-label={dateEnv.format(date, WEEKDAY_FORMAT)}
                 className={[
                   'fc-col-header-cell-cushion',
@@ -74,7 +74,7 @@ export class TableDowCell extends BaseComponent<TableDowCellProps> {
                 ref={innerElRef}
               >
                 {innerContent}
-              </a>
+              </p>
             </div>
           </th>
         )}
